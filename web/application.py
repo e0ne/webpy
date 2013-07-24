@@ -282,7 +282,7 @@ class application:
                 else:
                     result = [result]
             except web.HTTPError, e:
-                result = [e.data]
+                result = [e.message]
 
             result = web.safestr(iter(result))
 
